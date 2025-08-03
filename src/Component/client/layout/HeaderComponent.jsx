@@ -21,13 +21,13 @@ function HeaderComponent(props) {
                        <li className="mr-5 hover:bg-[#086B68] px-3 py-1 text-black hover:text-white  rounded-full">
                            <Link className=" hover:text-white] font-bold" href="/">Home</Link></li>
                        <li className="mr-5 hover:bg-[#086B68] px-3 py-1 text-black hover:text-white  rounded-full">
-                           <Link className="hover:text-white font-bold" href="/">Products</Link></li>
+                           <Link className="hover:text-white font-bold" href="/Products">Products</Link></li>
                        <li className="mr-5 hover:bg-[#086B68] px-3 py-1 text-black hover:text-white  rounded-full">
-                           <Link className="hover:text-white font-bold" href="/">Blog</Link></li>
+                           <Link className="hover:text-white font-bold" href="/Blog">Blog</Link></li>
                        <li className="mr-5 hover:bg-[#086B68] px-3 py-1 text-black hover:text-white  rounded-full">
-                           <Link className="hover:text-white font-bold" href="/">Countact Us</Link></li>
+                           <Link className="hover:text-white font-bold" href="/Contact">Countact Us</Link></li>
                        <li className="mr-5 hover:bg-[#086B68] px-3 py-1 text-black hover:text-white  rounded-full">
-                           <Link className="hover:text-white font-bold" href="/">About us</Link></li>
+                           <Link className="hover:text-white font-bold" href="/About">About us</Link></li>
                    </ul>
                </div>
                <div className="">
@@ -80,7 +80,7 @@ function HeaderComponent(props) {
                                                className="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-indigo-600 group-hover:w-3/6"></span>
                                        </Link></li>
                                    <li className="mt-3 text-[14px] text-lg text-lg m-6 group relative w-max">
-                                       <Link href="">
+                                       <Link href="/Products">
                                            <span className="hover:font-bold transition-all">Products</span>
                                            <span
                                                className="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-indigo-600 group-hover:w-3/6"></span>
@@ -88,7 +88,7 @@ function HeaderComponent(props) {
                                                className="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-indigo-600 group-hover:w-3/6"></span>
                                        </Link></li>
                                    <li className="mt-3 text-[14px] text-lg text-lg m-6 group relative w-max">
-                                       <Link href="">
+                                       <Link href="/Blog">
                                            <span className="hover:font-bold transition-all">Blog</span>
                                            <span
                                                className="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-indigo-600 group-hover:w-3/6"></span>
@@ -96,7 +96,7 @@ function HeaderComponent(props) {
                                                className="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-indigo-600 group-hover:w-3/6"></span>
                                        </Link></li>
                                    <li className="mt-3 text-[14px] text-lg text-lg m-6 group relative w-max">
-                                       <Link href="">
+                                       <Link href="/Countact">
                                            <span className="hover:font-bold transition-all">Countact Us</span>
                                            <span
                                                className="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-indigo-600 group-hover:w-3/6"></span>
@@ -104,7 +104,7 @@ function HeaderComponent(props) {
                                                className="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-indigo-600 group-hover:w-3/6"></span>
                                        </Link></li>
                                    <li className="mt-3 text-[14px] text-lg text-lg m-6 group relative w-max">
-                                       <Link href="">
+                                       <Link href="/About">
                                            <span className="hover:font-bold transition-all">About us</span>
                                            <span
                                                className="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-indigo-600 group-hover:w-3/6"></span>

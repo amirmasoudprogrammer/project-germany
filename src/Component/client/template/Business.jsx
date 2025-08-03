@@ -24,7 +24,7 @@ function Business(props) {
                             <p className="text-[#2CBEE3] text-[20px] w-[300px] m-auto flex items-center justify-center md:text-[40px] md:w-[600px] ">
                                 If you're a developer, get your website template from here!
                             </p>
-                            <Link href="" className="w-[302px] md:w-[450px] h-[45px] rounded mt-3 bg-[#2CBEE3] flex items-center justify-center">
+                            <Link href="/order" className="w-[302px] md:w-[450px] h-[45px] rounded mt-3 bg-[#2CBEE3] flex items-center justify-center">
                                 Developer
                             </Link>
                         </div>
@@ -35,7 +35,7 @@ function Business(props) {
                             <p className="text-[#2CBEE3] text-[20px] w-[300px] m-auto flex items-center justify-center md:text-[40px] md:w-[600px] ">
                                 If you're a developer, get your website template from here!
                             </p>
-                            <Link href="" className="w-[302px] md:w-[450px] h-[45px] rounded mt-3 bg-slate-300 text-black font-bold flex items-center justify-center">
+                            <Link href="/order" className="w-[302px] md:w-[450px] h-[45px] rounded mt-3 bg-slate-300 text-black font-bold flex items-center justify-center">
                                 Buissens
                             </Link>
                         </div>

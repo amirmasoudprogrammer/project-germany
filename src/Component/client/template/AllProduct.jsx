@@ -67,8 +67,7 @@ function AllProduct() {
 
                 <div className="flex items-center md:w-full justify-around md:justify-end">
                     {/* فیلترها */}
-                    <div
-                        className="hidden md:flex h-[48px] bg-[#C2BB87] mt-10 mr-72 rounded items-center justify-between">
+                    <div className="hidden md:flex h-[48px] bg-[#C2BB87] mt-10 mr-72 rounded items-center justify-between">
                         <ul className="flex items-center justify-around w-[610px] cursor-pointer">
                             <li className="relative group">
                                 {/* دکمه منو */}
@@ -185,7 +184,6 @@ function AllProduct() {
                                     </div>
                                 </div>
                             </li>
-
 
                         </ul>
 

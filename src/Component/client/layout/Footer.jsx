@@ -10,11 +10,7 @@ import { FaChevronUp } from "react-icons/fa";
 function Footer() {
     return (
         <>
-            <div  className="text-black absolute m-auto flex items-center justify-center top-72 bottom-0 left-0 right-0">
-                <Link href="/">
-                    <FaChevronUp />
-                </Link>
-            </div>
+
             <footer className="hidden md:block bg-cover bg-center bg-no-repeat w-full h-[400px]"
                     style={{backgroundImage: "url('/image/Frame 1598.png')"}}>
                 <div

@@ -14,6 +14,7 @@ export default function LayoutWrapper({ children }) {
         "/Blog",
         "/dashboard",
         "/cart",
+        "/order",
     ];
 
     const noLayout =
