@@ -1,9 +1,15 @@
-import React from 'react';
+"use client"
+import React, {useState} from 'react';
 import SignupPage from "@/Component/client/template/SignupPage";
+import SignupEmail from "@/Component/client/template/SignupEmail";
 
 function Page(props) {
+    const [item, setItem] = useState(1)
     return (
-        <SignupPage/>
+
+        item === 1 ? (<SignupEmail setItem={setItem}/>) : (<SignupPage/>)
+
+
     );
 }
 
