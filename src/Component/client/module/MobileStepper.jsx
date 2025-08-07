@@ -49,7 +49,7 @@ const MobileStepper = ({ steps, onBack, onNext, currentStep }) => {
 
             <div className="flex items-center justify-center gap-2 flex-wrap">
                 {steps.map((item, index) => (
-                    <Link href={item.route} key={item.id} className="flex items-center gap-1">
+                    <div key={item.id} className="flex items-center gap-1">
                         <span
                 className={`text-[10px] font-medium ${
                     currentStep === item.id
@@ -62,7 +62,7 @@ const MobileStepper = ({ steps, onBack, onNext, currentStep }) => {
                         {index < steps.length - 1 && (
                             <FaAngleRight className="text-gray-300 text-xs" />
                         )}
-                    </Link>
+                    </div>
                 ))}
             </div>
         </div>

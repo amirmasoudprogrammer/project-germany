@@ -13,30 +13,30 @@ function Header() {
     return (
         <>
             {/*Header for Desktop View */}
-            <div  className="hidden md:flex items-center justify-around z-10 m-auto fixed left-0 right-0">
+            <div  className="hidden md:flex items-center justify-around z-50 m-auto absolute w-full">
                 <Link href="/">
                     <Image src="/image/logoWeb.png" alt="logo" className="w-[100px] h-[100px]" width={269} height={269}/>
                 </Link>
                 <div className="flex items-center justify-between  ">
                     <ul className="flex items-end justify-between">
-                        <li className="mr-5 hover:bg-[#086B68] px-3 py-1 text-black hover:text-white  rounded-full">
-                            <Link className=" hover:text-white] font-bold" href="/">Home</Link></li>
-                        <li className="mr-5 hover:bg-[#086B68] px-3 py-1 text-black hover:text-white  rounded-full">
-                            <Link className="hover:text-white font-bold" href="/Products">Products</Link></li>
-                        <li className="mr-5 hover:bg-[#086B68] px-3 py-1 text-black hover:text-white  rounded-full">
-                            <Link className="hover:text-white font-bold" href="/Blog">Blog</Link></li>
-                        <li className="mr-5 hover:bg-[#086B68] px-3 py-1 text-black hover:text-white  rounded-full">
-                            <Link className="hover:text-white font-bold" href="/Contact">Countact Us</Link></li>
-                        <li className="mr-5 hover:bg-[#086B68] px-3 py-1 text-black hover:text-white  rounded-full">
-                            <Link className="hover:text-white font-bold" href="/About">About us</Link></li>
+                        <li className="mr-5 hover:bg-[#EDE9C4] px-3 py-1 text-[#EDE9C4] hover:text-[#086B68] rounded-full">
+                            <Link className=" hover:text-[#086B68] font-bold" href="/">Home</Link></li>
+                        <li className="mr-5 hover:bg-[#EDE9C4] px-3 py-1 text-[#EDE9C4] hover:text-[#086B68]  rounded-full">
+                            <Link className="hover:text-[#086B68] font-bold" href="/Products">Products</Link></li>
+                        <li className="mr-5 hover:bg-[#EDE9C4] px-3 py-1 text-[#EDE9C4] hover:text-[#086B68]  rounded-full">
+                            <Link className="hover:text-[#086B68] font-bold" href="/Blog">Blog</Link></li>
+                        <li className="mr-5 hover:bg-[#EDE9C4] px-3 py-1 text-[#EDE9C4] hover:text-[#086B68]  rounded-full">
+                            <Link className="hover:text-[#086B68] font-bold" href="/Contact">Countact Us</Link></li>
+                        <li className="mr-5 hover:bg-[#EDE9C4] px-3 py-1 text-[#EDE9C4] hover:text-[#086B68]  rounded-full">
+                            <Link className="hover:text-[#086B68] font-bold" href="/About">About us</Link></li>
                     </ul>
                 </div>
                 <div className="">
                     <Link
-                        className="font-bold py-2 px-2 rounded-lg font-medium mr-5 text-black hover:text-white hover:bg-[#086B68]"
+                        className="font-bold py-2 px-2 rounded-lg font-medium mr-5 text-[#EDE9C4] hover:text-[#086B68] hover:bg-[#EDE9C4]"
                         href="/Signup">Log in</Link>
                     <Link
-                        className="font-bold py-2 px-2 rounded-lg font-medium text-black hover:text-white hover:bg-[#086B68]"
+                        className="font-bold py-2 px-2 rounded-lg font-medium text-[#EDE9C4] hover:text-[#086B68] hover:bg-[#EDE9C4]"
                         href="/Signup">Sign up</Link>
                 </div>
             </div>

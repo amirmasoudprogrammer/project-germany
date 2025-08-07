@@ -1,12 +1,26 @@
+"use client"
 import React from 'react';
 import LayoutOrder from "@/Component/client/module/LayoutOrder";
 import Image from "next/image";
 import {CiCircleCheck} from "react-icons/ci";
 import {CiShoppingCart} from "react-icons/ci";
+import useStepStore from "@/stores/useStepStore";
+import {useRouter} from "next/navigation";
 
 
 function CustomerCart(props) {
-    return (
+    const {step, setStep} = useStepStore();
+    const router = useRouter()
+
+
+    const startButton = () => {
+        setStep(step + 1)
+        router.push("/cart/OrderData")
+    }
+
+
+
+        return (
         <div className="bg-white min-h-screen w-full flex items-center flex-col">
             <div className="bg-white ">
                 <LayoutOrder/>
@@ -51,8 +65,7 @@ function CustomerCart(props) {
                                 className="text-black font-thin text-[12px] md:text-[15px]">Try it free for 1 month!</span>
                             <p className="text-black text-[12px] md:text-[20px] mt-2">7,- €/Month</p>
                         </div>
-                        <div
-                            className="w-[280px] md:w-[126px] flex items-center cursor-pointer justify-center h-[32px] bg-[#20B4C2] m-auto mt-10 md:mt-auto  md:ml-auto md:mr-10 rounded-full">
+                        <div onClick={startButton} className="w-[280px] md:w-[126px] flex items-center cursor-pointer justify-center h-[32px] bg-[#20B4C2] m-auto mt-10 md:mt-auto  md:ml-auto md:mr-10 rounded-full">
                             <p className="text-[25px]"><CiShoppingCart/></p>
                             <span className="ml-2">Choose</span>
                         </div>

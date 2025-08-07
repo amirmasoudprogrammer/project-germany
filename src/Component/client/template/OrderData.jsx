@@ -1,11 +1,23 @@
+"use client"
 import React from 'react';
 import LayoutOrder from "@/Component/client/module/LayoutOrder";
 import Link from "next/link";
 import {MdDelete} from "react-icons/md";
 import Image from "next/image";
+import useStepStore from "@/stores/useStepStore";
+import {useRouter} from "next/navigation";
 
 
 function OrderData(props) {
+    const {step, setStep} = useStepStore();
+    const router = useRouter()
+
+
+    const startButton = () => {
+        setStep(step + 1)
+        router.push("/cart/PaymentDetails")
+    }
+
     return (
         <div className="bg-white min-h-screen w-full flex items-center flex-col">
             <div className="bg-white ">
@@ -79,7 +91,7 @@ function OrderData(props) {
                             <p className="text-black">or</p>
                             <span className="w-[200px] h-[1px] bg-[#1B1F26B8] flex ml-5"></span>
                         </div>
-                        <div className="w-[240px] h-[24px] bg-[#20B4C2] flex items-center justify-center rounded">
+                        <div onClick={startButton} className="w-[240px] h-[24px] bg-[#20B4C2] flex items-center justify-center rounded">
                             <span>Pay</span>
                         </div>
                     </div>

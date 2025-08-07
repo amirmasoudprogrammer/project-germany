@@ -1,11 +1,22 @@
+"use client"
 import React from 'react';
 import LayoutOrder from "@/Component/client/module/LayoutOrder";
 import {CiSearch} from "react-icons/ci";
 import {CiShoppingCart} from "react-icons/ci";
+import useStepStore from "@/stores/useStepStore";
+import {useRouter} from "next/navigation";
 
 
 
 function ShopingCart(props) {
+    const {step, setStep} = useStepStore();
+    const router = useRouter()
+
+
+    const startButton = () => {
+        setStep(step + 1)
+        router.push("/cart/CustomerCart")
+    }
     return (
         <div className="bg-white min-h-screen w-full flex items-center flex-col">
             <div className="bg-white ">
@@ -51,8 +62,7 @@ function ShopingCart(props) {
                                 className="flex items-center justify-center rounded-lg text-[20px] w-[34px] h-[34px] bg-[#20B4C2] text-black"><CiSearch/></span>
                         </div>
                     </div>
-                    <button
-                        className="w-[180px] text-[14px] h-[26px] md:w-[228px] h-[48px] mt-5 md:mt-0 rounded bg-[#20B4C2]  md:rounded-lg">Continue
+                    <button onClick={startButton} className="w-[180px] text-[14px] h-[26px] md:w-[228px] h-[48px] mt-5 md:mt-0 rounded bg-[#20B4C2]  md:rounded-lg">Continue
                         without domain
                     </button>
                 </div>

@@ -3,6 +3,7 @@ import HeaderComponent from "@/Component/client/layout/HeaderComponent";
 import CardTemplate from "@/Component/client/module/CardTemplate";
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa";
+import Footer from "@/Component/client/layout/Footer";
 
 
 
@@ -62,6 +63,7 @@ function ProductPage(props) {
                     <span className="text-[#086B68] cursor-pointer"><FaChevronRight /></span>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }

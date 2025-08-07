@@ -22,7 +22,8 @@ export default function LayoutWrapper({ children }) {
         pathname.startsWith("/Products/") ||
         pathname.startsWith("/Blog/") ||
         pathname.startsWith("/dashboard/") ||
-        pathname.startsWith("/cart/");
+        pathname.startsWith("/cart/") ||
+        pathname.startsWith("/order/");
 
     return noLayout ? children : <Layouts>{children}</Layouts>;
 }

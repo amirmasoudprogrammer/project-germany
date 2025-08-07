@@ -1,9 +1,20 @@
-import React from 'react';
+"use client"
+import React, {useEffect} from 'react';
 import LayoutOrder from "@/Component/client/module/LayoutOrder";
 import { CiSearch } from "react-icons/ci";
+import useStepStore from "@/stores/useStepStore";
+import {useRouter} from "next/navigation";
 
 
 function Selection(props) {
+    const {step, setStep} = useStepStore();
+    const router = useRouter()
+
+
+  const startButton = () => {
+      setStep(step + 1)
+      router.push("/cart/ShoppingCart")
+  }
     return (
         <div className="bg-white min-h-screen w-full flex items-center flex-col">
             <div className="bg-white ">
@@ -40,7 +51,7 @@ function Selection(props) {
                             <span className="flex items-center justify-center rounded-lg text-[20px] w-[34px] h-[34px] bg-[#20B4C2] text-black"><CiSearch /></span>
                         </div>
                     </div>
-                    <button className="w-[180px] text-[14px] h-[26px] md:w-[228px] md:h-[48px] rounded bg-[#20B4C2] mt-5 md:mt-0 md:rounded-lg">Continue without domain</button>
+                    <button onClick={startButton} className="w-[180px] text-[14px] h-[26px] md:w-[228px] md:h-[48px] rounded bg-[#20B4C2] mt-5 md:mt-0 md:rounded-lg">Continue without domain</button>
                 </div>
             </div>
         </div>

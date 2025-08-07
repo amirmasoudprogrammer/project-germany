@@ -4,8 +4,8 @@ import Image from "next/image";
 function Managers(props) {
     return (
      <>
-         <div className="hidden md:flex bg-white w-full  flex-col items-center justify-center">
-             <div className="mt-28">
+         <div className="hidden md:flex bg-white  w-full md:h-[780px] flex-col items-center justify-center">
+             <div className="mt-36">
                  <Image src="/image/“Managers”.svg" alt="image" width={320} height={84}/>
              </div>
              <div className="flex items-center justify-center">
@@ -38,8 +38,8 @@ function Managers(props) {
                          </div>
                      </div>
                  </div>
-                 <div className="flex items-center justify-center relative right-28 -top-10">
-                     <Image src="/image/portrait-joyful-young-man-white-shirt 1.svg" alt="image" className="mb-20"
+                 <div className="flex items-center justify-center relative right-20 -top-5 ">
+                     <Image src="/image/photo_2025-08-04_12-20-30_prev_ui.png" alt="image" className="mb-20"
                             width={400} height={100}/>
                  </div>
              </div>
@@ -50,8 +50,8 @@ function Managers(props) {
              <div className="mt-28">
                  <Image src="/image/Managers1.svg" alt="image" width={110} height={34}/>
              </div>
-             <div className="flex items-center justify-center relative top-3">
-                 <Image src="/image/imagep.svg" alt="image" className=""
+             <div className="flex items-center justify-center relative top-7">
+                 <Image src="/image/photo_2025-08-04_12-20-27.jpg" alt="image" className=""
                         width={312} height={388}/>
              </div>
              <div>
@@ -72,7 +72,7 @@ function Managers(props) {
                          </div>
                      </div>
                  </div>
-                 <div className="-mt-10 flex items-center justify-center">
+                 <div className="-mt-10 flex items-center justify-center mb-8">
                      <div className="flex items-center">
                          <div className="-ml-3 w-[50px] h-[50px] bg-[#CAACF2] rounded-full flex items-center justify-center text-[12px] text-white">
                              +1000

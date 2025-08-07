@@ -8,10 +8,18 @@ function Banner(props) {
     return (
         <div className="relative ">
             <div className="">
-                <Image src="/image/images.jpg" alt="logo" className="w-[360px] h-[812px] rounded-xl md:rounded-none mt-5 md:mt-0  md:w-[100%] md:h-auto object-cover" width={1440} height={269}/>
+
+                <video
+                    src="/video/Veo 3 Fast [Image to Video] - Image to Video - fal.ai.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-[360px] h-[812px] rounded-xl md:rounded-none mt-5 md:mt-0  md:w-[1440px] md:h-auto object-cover"
+                />
             </div>
 
-            <div className="absolute top-10 w-[504px] h-[200px] m-auto md:bottom-0 left-0 flex flex-col pl-5 pt-10 md:ml-10">
+            <div className="absolute top-10 w-auto md:w-[504px] h-[200px] m-auto md:bottom-0 left-0 flex flex-col pl-5 pt-10 md:ml-10">
                 <div className="w-[312px] md:w-[404px] flex items-center justify-start bg-[#EDE9C480] p-1 rounded-md">
                     <span className="text-[25px] ml-2">
                         <CiSearch />
